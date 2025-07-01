@@ -18,7 +18,7 @@ A Django web application that allows users to create events (like trips, parties
   - How much each person owes or is owed
   - Simplified payments to settle debts efficiently
 - Event summaries with expenses, balances, and payment suggestions
-- Clean, user-friendly interface with Bootstrap/Tailwind
+- Clean, user-friendly interface
 
 ---
 
@@ -31,8 +31,6 @@ Key complexities:
 - Debt simplification to reduce transactions.
 - Many-to-many relationships (`Expense.shared_among`) and flexible handling of participants (not tied to user accounts).
 - Real-time calculations with no redundant stored financial data.
-
-This combines Django’s strengths with applied algorithmic problem-solving and dynamic relational data management.
 
 ---
 
