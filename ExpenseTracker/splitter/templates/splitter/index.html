@@ -1,0 +1,117 @@
+{% extends "splitter/base.html" %}
+
+{% block css %}
+{% load static %}
+    <link href="{% static 'css/index.css' %}" rel="stylesheet">
+    <link rel="shortcut icon" href="https://i.postimg.cc/XvZmZXGf/favicon.png" type="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+<main>
+        <article>
+            <section class="hero" id="home">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="h1 hero-title">Split Expenses. Settle Debts. Stay Friends.</h1>
+
+                        <p class="hero-text">Manage who paid for what and settle up quickly — fair, transparent, and stress-free.</p>
+
+                        <button class="btn btn-primary">Get Started</button>
+                    </div>
+                    <div class="hero-banner"></div>
+                </div>
+
+                <img src="https://i.postimg.cc/d1MKfVCr/output-onlinepngtools.png" alt="shape" class="shape-content">
+            </section>
+
+            <section class="about" id="about">
+                <div class="container">
+                    <div class="about-top">
+                        <h2 class="h2 section-title">Why You'll Love It</h2>
+
+                        <p class="section-text">A simple tool to help you track shared expenses, calculate balances, and simplify payments.</p>
+
+                        <ul class="about-list">
+                            <li>
+                                <div class="about-card">
+                                    <div class="card-icon"><ion-icon name="briefcase-outline"></ion-icon></div>
+
+                                    <h3 class="h3 card-title">Create Events</h3>
+
+                                    <p class="card-text">Manage trips, dinners, or any group activity.</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="about-card">
+                                    <div class="card-icon"><ion-icon name="chatbubbles-outline"></ion-icon></div>
+
+                                    <h3 class="h3 card-title">Add Participants</h3>
+
+                                    <p class="card-text">Friends, family, or teammates — even if they don't have an account.</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="about-card">
+                                    <div class="card-icon"><ion-icon name="chatbubbles-outline"></ion-icon></div>
+
+                                    <h3 class="h3 card-title">Privacy First</h3>
+
+                                    <p class="card-text">No public sharing, only participants see the data.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="about-bottom">
+                        <figure class="about-bottom-banner">
+                            <img src="https://i.postimg.cc/nzjhFvtq/about-banner.png" alt="about banner" class="about-banner">
+                        </figure>
+
+                        <div class="about-bottom-content">
+                            <h2 class="h2 section-title">No more awkward "who owes what" conversations.</h2>
+
+                            <p class="section-text">Quick, fair, and transparent — every time.</p>
+
+                            <button class="btn btn-primary">Sign up for Free</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features" id="features">
+                <div class="container">
+                    <h2 class="h2 section-title">Step 1: Create an Event</h2>
+
+                    <p class="section-text">Like "Road Trip 2025" or "Monthly Dinner."</p>
+
+                    <ul class="features-list">
+                        <li class="features-item">
+                            <figure class="features-item-banner"><img src="https://i.postimg.cc/yYjd16Z6/feature-1.png" alt="feature banner"></figure>
+
+                            <div class="feature-item-content">
+                                <h3 class="h2 item-title">Step 2: Add Participants</h3>
+
+                                <p class="item-text">Invite friends by name or email.</p>
+                            </div>
+                        </li>
+
+                        <li class="features-item">
+                            <figure class="features-item-banner"><img src="https://i.postimg.cc/4N21KGCZ/feature-2.png" alt="feature banner"></figure>
+
+                            <div class="feature-item-content">
+                                <h3 class="h2 item-title">Step 3: Track Expenses & Settle Up</h3>
+
+                                <p class="item-text">Enter expenses as you go. See balances and who should pay whom.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+    </main>
+{% endblock %}

@@ -1,0 +1,103 @@
+:root {
+    --maximum-yellow-red: hsl(37, 100%, 68%);
+    --royal-blue: rgb(91, 128, 222);
+    --bittersweet: rgb(252, 177, 188);
+    --french-rose: rgb(252, 126, 139);
+    --davys-gray: rgb(23, 23, 23);
+    --white: rgb(240, 241, 242);
+    --black: rgb(13, 14, 18);
+
+    --ff-poppins: "Poppins", sans-sarif;
+
+    --fs-1: 32px;
+    --fs-2: 26px;
+    --fs-3: 22px;
+    --fs-4: 18px;
+    --fs-5: 15px;
+    --fs-6: 14px;
+
+    --fw-700: 700;
+    --fw-600: 600;
+    --fw-500: 500;
+
+    --transition: 0.25s ease-in-out;
+}
+
+body {
+    padding: 10px;
+    background-color: var(--black);
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+input,
+button {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: hsl(0, 0%, 100%);
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navigation CSS */
+.navbar {
+  z-index: 2;
+  background-color: var(--black);
+}
+
+.navbar-logo {
+    color: var(--white) !important;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: var(--white) !important;
+}
+
+/* Hamburger menu icon color */
+.navbar-toggler-icon {
+    color: var(--royal-blue);
+}
+
+.body-container  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+}
+
+input:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px var(--black) inset !important;
+    -webkit-box-shadow: 0 0 0px 1000px var(--black) inset !important;
+    -webkit-text-fill-color: var(--white) !important;
+}
