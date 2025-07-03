@@ -84,6 +84,12 @@ img {
     color: var(--white) !important;
 }
 
+.navbar-expand-lg {
+    background-color: var(--black);
+    position: relative;
+    z-index: 2;
+}
+
 /* Hamburger menu icon color */
 .navbar-toggler-icon {
     color: var(--royal-blue);
@@ -101,3 +107,26 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px var(--black) inset !important;
     -webkit-text-fill-color: var(--white) !important;
 }
+
+/*MEDIA QUERIES*/
+
+@media(min-width: 560px) {
+    .body-container { max-width: 550px; margin-inline: auto; }
+    .navbar-container { max-width: 550px; margin-inline: auto; }
+}
+
+@media(min-width: 768px) {
+    .body-container { max-width: 740px; }
+    .navbar-container { max-width: 740px; }
+}
+
+@media(min-width: 1024px) {
+    .body-container { max-width: 950px; }
+    .navbar-container { max-width: 950px; }
+}
+
+@media(min-width: 1200px) {
+    .body-container { max-width: 1150px; }
+    .navbar-container { max-width: 1150px; }
+}                                         
+            

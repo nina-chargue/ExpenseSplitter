@@ -1,8 +1,12 @@
-
+.body-container  {
+    background-image: url(https://i.postimg.cc/tTLq8Jkj/background-forms.png);
+    background-size: cover;
+    background-position: center;
+}
 /*=============== LOGIN ===============*/
 .login {
   position: relative;
-  /* height: 100vh; */
+  height: 50vh;
   display: grid;
   align-items: center;
 }
@@ -18,7 +22,7 @@
 .container {
   position: relative;
   background-color: hsla(0, 0%, 10%, 0.1);
-  border: 2px solid white;
+  border: 2px solid var(--white);
   margin-inline: 1.5rem;
   padding: 2.5rem 1.5rem;
   border-radius: 1rem;
