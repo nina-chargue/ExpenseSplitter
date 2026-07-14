@@ -2,21 +2,23 @@
 
 
 .colored-button {
-    background-color: rgb(255, 32, 78, 1);
-    color: #E7E9EA;
+    background-color: var(--french-rose);
+    color: var(--white);
     font-weight: bold;
     border: none;
     border-radius: 25px;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin: 5px 0 0 auto;
+    /* margin: 5px 0 0 auto; */
+    /* margin-left: auto; */
     display: flex;
     height: fit-content;
     width: fit-content;
-    position: absolute;
+    /* position: absolute; */
     bottom: 10px; 
     right: 10px; 
+    padding: 0 10px;
 }
 
 .colored-button:hover, .colored-button:active, .colored-button:focus {
@@ -26,8 +28,8 @@
 
 
 .form-button {
-    background-color: rgb(255, 32, 78, 1);
-    color: #E7E9EA;
+    background-color: var(--french-rose);
+    color: var(--white);
     font-weight: bold;
     border: none;
     border-radius: 25px;
@@ -108,8 +110,8 @@
     margin-top: 30px;
 
     .confirmation-colored-button {
-        background-color: rgb(255, 32, 78, 1);
-        color: #E7E9EA;
+        background-color: var(--french-rose);
+        color: var(--white);
         font-weight: bold;
         border: none;
         border-radius: 25px;
@@ -133,24 +135,53 @@
 
 /* EVENTS */
 
-
 #eventsContainer {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.neweventContainer {
+.section-title{
     display: flex;
-    border: 1px solid #71767B;
+    justify-content: center;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.events-view {
     width: 100%;
     height: 100%;
-    padding: 10px;
+}
+
+#modalEventDate {
+    width: 100%;
+    cursor: pointer;
+}
+
+#modalEventDate::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: invert(1);
+}
+
+.new-event-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.new-event-form > * {
+    grid-column: 1 / -1;
 }
 
 .darkInput {
-    background-color: black;
-    color: #E7E9EA;
+    background-color: var(--black);
+    color: var(--white);
     font-size: 18px;
     border: none;
     overflow: hidden;
@@ -159,15 +190,29 @@
 
 .darkInput:focus {
     outline: none;
-    background-color: black;
-    color: #E7E9EA;
+    background-color: var(--black);
+    color: var(--white);
     border: none;
     box-shadow: none;
 }
 
-.form-group {
-    margin-bottom: 0;   
-    width: 100%; 
+.dateSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+    align-items: center;
+}
+
+.dateSection label {
+    white-space: nowrap;
+    display: contents;
+}
+
+.formatted-date {
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .event {
@@ -188,6 +233,17 @@
 .event-footer {
     display: flex;
     justify-content: space-between;
+}
+
+.form-group {
+    margin-bottom: 0;   
+    width: 100%; 
+}
+
+.participantsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 /* SINGLE EVENT */
@@ -224,7 +280,7 @@
 }
 
 .modal-content {
-    background-color: black;
+    background-color: var(--black);
     margin: 15% auto;
     width: 50%;
     border-radius: 10px;
@@ -232,8 +288,7 @@
 }
 
 .close-button {
-    color: #E7E9EA;
-    /* float: left; */
+    color: var(--white);
     font-size: 28px;
     font-weight: lighter;
     width: 28px;
@@ -242,12 +297,13 @@
     text-align: center;
     display: inline-block;
     cursor: pointer;
+    margin-left: auto;
 }
 
 .close-button:hover,
 .close-button:focus {
-    color: rgb(255, 32, 78, 1);
-    background-color: rgb(247, 59, 96, 0.2);
+    color: var(--french-rose);
+    background-color: rgb(252, 126, 139, 0.2);
     border-radius: 50%;
 }
 

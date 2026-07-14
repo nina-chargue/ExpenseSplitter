@@ -9,6 +9,7 @@ class Event(models.Model):
     name = models.CharField(max_length=100)
     created_by = models.ForeignKey(User, on_delete=models.CASCADE, related_name='events')
     created_at = models.DateTimeField(auto_now_add=True)
+    event_date = models.DateField(null=True, blank=True)
 
     def serialize(self):
         return {
@@ -16,6 +17,7 @@ class Event(models.Model):
             'name': self.name,
             'created_at': self.created_at,
             'created_by': self.created_by.username,
+            'event_date': self.event_date.isoformat() if self.event_date else None,
         }
 
 class Participant(models.Model):

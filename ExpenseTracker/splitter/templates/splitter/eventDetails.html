@@ -1,0 +1,15 @@
+{% extends "splitter/base.html" %}
+
+{% block css %}
+{% load static %}
+    <link href="{% static 'css/events.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+        <div class="filterContainer">
+            <button class="filter-btn" id="filterExpenses">Expenses</button>
+            <button class="filter-btn" id="filterBalances">Blances</button>
+            <button class="filter-btn" id="filterSettlements">Settlements</button>
+        </div>
+
+{% endblock %}

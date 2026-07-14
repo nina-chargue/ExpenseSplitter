@@ -23,20 +23,154 @@
     --transition: 0.25s ease-in-out;
 }
 
-body {
-    padding: 10px;
-    background-color: var(--black);
-    color: var(--white);
-    margin: 0;
-    padding: 0;
-}
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+*, *::before, *::after { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+li { 
+    list-style: none; 
+}
+
+a { 
+    text-decoration: none; 
+}
+
+a, img, button, span, ion-icon, label, input, textarea { 
+    display: block; 
+}
+
+button {
+    font: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+textarea, input { 
+    font: inherit;
+    background: none;
+    border: none;
+    width: 100%;
+    color: var(--white);
+}
+
+:is(input, textarea):focus { 
+    outline: none; 
+}
+
+:focus { 
+    outline-offset: 4px; 
+}
+
+html { 
+    font-family: var(--ff-poppins); 
+    scroll-behavior: smooth; 
+}
+
+body { 
+    background: var(--black); 
+    overflow-x: hidden; 
+}
+
+::-webkit-scrollbar { 
+    width: 10px; 
+}
+
+::-webkit-scrollbar-track { 
+    background: var(--black); 
+}
+
+::-webkit-scrollbar-thumb { 
+    background: hsl(0, 0%, 50%); 
+}
+
+.index-container { 
+    padding: 0px 15px; 
+}
+
+.h1, .h2, .h3 { 
+    font-weight: var(--fw-600); 
+    line-height: 1.3; 
+    text-transform: capitalize; 
+}
+
+.h1 { 
+    color: var(--royal-blue); 
+    font-size: var(--fs-1); 
+}
+    
+.h2 { 
+    font-size: var(--fs-2); 
+}
+    
+.h3 { 
+    color: var(--royal-blue); 
+    font-size: var(--fs-3); 
+}
+
+.h4 { 
+    color: var(--royal-blue); 
+    font-size: var(--fs-5); 
+    font-weight: var(--fw-600); 
+}
+
+.btn {
+    font-size: var(--fs-6);
+    text-transform: uppercase;
+    font-weight: var(--fw-600);
+    padding: 10px 40px;
+    border: 1px solid;
+    border-radius: 6px;
+}
+
+.btn-primary {
+    background-color: var(--french-rose);
+    border-color: var(--french-rose);
+    color: var(--white);
+    height: fit-content;
+    width: fit-content;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    &:not(:disabled):not(.disabled):active {
+        background-color: var(--bittersweet);
+        border-color: var(--bittersweet);
+        color: var(--white);
+        box-shadow: none;
+    }
+}
+
+.btn-secondary {
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    &:not(:disabled):not(.disabled):active {
+        background: var(--davys-gray);
+        border-color: var(--davys-gray);
+        color: var(--white);
+        box-shadow: none;
+    }
+}
+
+body {
+    padding: 10px;
+    background-color: var(--black);
+    color: var(--white);
+    margin: 0;
+    padding: 0;
 }
 
 body,
@@ -99,7 +233,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10vh;
+    padding-top: 1vh;
 }
 
 input:-webkit-autofill {
@@ -111,22 +245,44 @@ input:-webkit-autofill {
 /*MEDIA QUERIES*/
 
 @media(min-width: 560px) {
-    .body-container { max-width: 550px; margin-inline: auto; }
-    .navbar-container { max-width: 550px; margin-inline: auto; }
+    .body-container { 
+        max-width: 550px; 
+        margin-inline: auto; 
+    }
+
+    .navbar-container { 
+        max-width: 550px; 
+        margin-inline: auto; 
+    }
 }
 
 @media(min-width: 768px) {
-    .body-container { max-width: 740px; }
-    .navbar-container { max-width: 740px; }
+    .body-container { 
+        max-width: 740px; 
+    }
+
+    .navbar-container { 
+        max-width: 740px; 
+    }
 }
 
 @media(min-width: 1024px) {
-    .body-container { max-width: 950px; }
-    .navbar-container { max-width: 950px; }
+    .body-container { 
+        max-width: 950px; 
+    }
+
+    .navbar-container { 
+        max-width: 950px; 
+    }
 }
 
 @media(min-width: 1200px) {
-    .body-container { max-width: 1150px; }
-    .navbar-container { max-width: 1150px; }
+    .body-container { 
+        max-width: 1150px; 
+    }
+
+    .navbar-container { 
+        max-width: 1150px; 
+    }
 }                                         
             
